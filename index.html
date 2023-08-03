@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Berisi stylesheet Anda -->
+    <title>Portofolio Unik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background-color: #1abc9c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            color: white;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .profile-description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Jose Renjiro Jeci Imago Dei</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
+        <h1>Portofolio Unik</h1>
     </header>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Selamat datang di portofolio saya. Saya adalah seorang <strong>pelajar web developer</strong> yang memiliki minat dalam membuat situs web yang menarik dan fungsional.
-        Saya bersekolah di <strong> SMKN 2 SEMARANG</strong> saya menguasai beberapa software untuk editing vidio yaitu Adobe premiere Pro dan After Effect.</p>
-        <!-- Tambahkan informasi tentang diri Anda, keahlian, dan pengalaman di sini -->
-    </section>
+    <main>
+        <div class="profile-card">
+            <div class="profile-picture">
+                <span>JD</span>
+            </div>
+            <div class="profile-name">John Doe</div>
+            <div class="profile-description">Front-end Developer</div>
 
-    <section id="projects">
-        <h2>Proyek</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi singkat proyek 1. Saya pernah mencoba membuat data diri di vscode menggunakan bahasa html.</p>
+            <div class="contact-info">
+                <p><span class="contact-icon">📧</span> john.doe@email.com</p>
+                <p><span class="contact-icon">📞</span> +123 4567 890</p>
+                <p><span class="contact-icon">🌐</span> www.johndoe.com</p>
+            </div>
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Proyek 2">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat proyek 2. Di sekolah saya pernah membuat game sederhana menggunakan green foot dengan bahasa java.</p>
-        </div>
-        <!-- Tambahkan lebih banyak proyek dengan mengulangi struktur project di atas -->
-    </section>
+    </main>
 
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Jika Anda tertarik untuk bekerja sama atau ingin bertanya tentang proyek, silakan hubungi saya melalui:</p>
-        <ul>
-            <li>Email: joserenjiro@email.com</li>
-            <li>Telepon: 0821-4673-7691</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Hak Cipta &copy; 2023 Jose Renjiro. Semua hak dilindungi.</p>
-    </footer>
+    <div class="footer">
+        &copy; 2023 John Doe - Portofolio Unik
+    </div>
 </body>
+
 </html>
