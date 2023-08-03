@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Unik</title>
+    <title>My Portofolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,6 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 80vh;
         }
 
@@ -57,6 +58,7 @@
         .profile-description {
             font-size: 16px;
             margin-top: 10px;
+            text-align: justify;
         }
 
         .contact-info {
@@ -80,34 +82,88 @@
             color: white;
             padding: 10px;
         }
+
+        /* Efek ketik-ketik */
+        .typewriter-text {
+            font-size: 36px;
+            font-weight: bold;
+            border-right: 2px solid #1abc9c;
+            padding-right: 8px;
+            animation: typing 2s steps(24), blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #1abc9c;
+            }
+        }
     </style>
-    
 </head>
 
 <body>
     <header>
-        <h1>My Portofolio</h1>
+        <h1>Portofolio Unik</h1>
     </header>
 
     <main>
         <div class="profile-card">
             <div class="profile-picture">
-                <span>JR</span>
+                <span>JD</span>
             </div>
             <div class="profile-name">Jose Renjiro</div>
-            <div class="profile-description">Editor Vidio dan 
-Web development student </div>
+            <div class="profile-description">
+                <p>
+                    Saya pelajar yang bersekolah di SMKN 2 Semarang,saya berada di jurusan PPLG yang berfokus pada pengembangan perangkat lunak. Saya pernah membuat game sederhana menggunakan 
+                    GreenFoot dengan bahasa Java,saya juga pernah mengkoding menggunakan vscode dengan bahasa C# dan HTML.Saya juga menguasai dalam editing vidio menggunakan software 
+                    Adobe Premiere Pro dan saya sedang mempelajari juga After Effect.
+                </p>
+            </div>
 
             <div class="contact-info">
                 <p><span class="contact-icon">📧</span> joserenjiro@email.com</p>
                 <p><span class="contact-icon">📞</span> +62 821 4673 7691</p>
+                <p><span class="contact-icon">🌐</span> - </p>
             </div>
         </div>
     </main>
 
     <div class="footer">
-        &copy; 2023 Jose Renjiro - My Portofolio
+        &copy; 2023 Jose Renjiro - My Portofolio 
     </div>
+
+    <script>
+        // Tulisan yang ingin ditampilkan dalam efek ketik-ketik
+        const textToType = "My Portofolio";
+
+        // Fungsi untuk menampilkan efek ketik-ketik
+        function typeWriterEffect(text, index) {
+            if (index < text.length) {
+                document.querySelector(".typewriter-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(() => typeWriterEffect(text, index), 150);
+            }
+        }
+
+        // Memulai efek ketik-ketik setelah dokumen dimuat
+        document.addEventListener("DOMContentLoaded", () => {
+            typeWriterEffect(textToType, 0);
+        });
+    </script>
 </body>
 
 </html>
