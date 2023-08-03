@@ -43,12 +43,13 @@
             width: 150px;
             height: 150px;
             margin: 0 auto;
-            background-color: #1abc9c;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 60px;
-            color: white;
+            overflow: hidden; /* Agar foto profil bulat */
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Memastikan gambar tidak menjadi terlalu besar */
         }
 
         .profile-name {
@@ -124,7 +125,8 @@
     <main>
         <div class="profile-card">
             <div class="profile-picture">
-                <span>JR</span>
+                <!-- Ubah link foto profil di bawah sesuai dengan URL gambar yang diinginkan -->
+                <img src="https://i.pinimg.com/564x/37/fe/70/37fe70b74b459783d28d8efed0129f3b.jpg">
             </div>
             <div class="profile-name">Jose Renjiro</div>
             <div class="profile-description">
