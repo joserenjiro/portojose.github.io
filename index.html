@@ -8,7 +8,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1abc9c;
+            background-image: url('https://i.pinimg.com/1200x/6e/b1/24/6eb1246b278dbaf755083bc4909a719a.jpg'); /* Ganti URL dengan link gambar latar belakang */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: black; /* Warna teks diubah menjadi hitam */
             margin: 0;
             padding: 0;
@@ -119,7 +122,7 @@
 
 <body>
     <header>
-        <h1>My Portofolio</h1>
+        <h1><span class="typewriter-text"></span></h1>
     </header>
 
     <main>
@@ -150,23 +153,4 @@
     </div>
 
     <script>
-        // Tulisan yang ingin ditampilkan dalam efek ketik-ketik
-        const textToType = "My Portofolio";
-
-        // Fungsi untuk menampilkan efek ketik-ketik
-        function typeWriterEffect(text, index) {
-            if (index < text.length) {
-                document.querySelector(".typewriter-text").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(() => typeWriterEffect(text, index), 150);
-            }
-        }
-
-        // Memulai efek ketik-ketik setelah dokumen dimuat
-        document.addEventListener("DOMContentLoaded", () => {
-            typeWriterEffect(textToType, 0);
-        });
-    </script>
-</body>
-
-</html>
+        // Fungsi efek ketik-ketik seperti sebelum
