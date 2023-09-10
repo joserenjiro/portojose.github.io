@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://i.pinimg.com/1200x/6e/b1/24/6eb1246b278dbaf755083bc4909a719a.jpg'); /* Ganti URL dengan link gambar latar belakang */
+            background-image: url('https://example.com/background.jpg'); /* Ganti URL dengan link gambar latar belakang */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -47,12 +47,14 @@
             height: 150px;
             margin: 0 auto;
             overflow: hidden; /* Agar foto profil bulat */
+            animation: border-color-change 3s infinite alternate; /* Animasi warna-warni border */
         }
 
         .profile-picture img {
             width: 100%;
             height: 100%;
             object-fit: cover; /* Memastikan gambar tidak menjadi terlalu besar */
+            border: 5px solid transparent; /* Border awal tanpa warna */
         }
 
         .profile-name {
@@ -87,6 +89,25 @@
             color: black; /* Warna teks diubah menjadi hitam */
             padding: 10px;
         }
+
+        /* Animasi warna-warni border */
+        @keyframes border-color-change {
+            0% {
+                border-color: red;
+            }
+            25% {
+                border-color: blue;
+            }
+            50% {
+                border-color: green;
+            }
+            75% {
+                border-color: orange;
+            }
+            100% {
+                border-color: purple;
+            }
+        }
     </style>
 </head>
 
@@ -106,14 +127,14 @@
                 <p>
                     Saya pelajar yang bersekolah di SMKN 2 Semarang, saya berada di jurusan PPLG yang berfokus pada pengembangan perangkat lunak. Saya pernah membuat game sederhana menggunakan 
                     GreenFoot dengan bahasa Java, saya juga pernah mengkoding menggunakan vscode dengan bahasa C# dan HTML. Saya tertarik untuk menjadi web developer. Saya juga menguasai dalam editing vidio menggunakan software 
-                    Adobe Premiere Pro dan saya juga sedang mempelakari  After Effect.
+                    Adobe Premiere Pro dan saya juga sedang mempelajari  After Effect.
                 </p>
             </div>
 
             <div class="contact-info">
                 <p><span class="contact-icon">📧</span> joserenjiro@email.com</p>
                 <p><span class="contact-icon">📞</span> +62 821 4673 7691</p>
-                <p><span class="contact-icon">🌐</span> github username:joserenjiro </p>
+                <p><span class="contact-icon">🌐</span> - </p>
             </div>
         </div>
     </main>
